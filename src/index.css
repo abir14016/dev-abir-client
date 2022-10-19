@@ -15,3 +15,7 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Poppins&family=Secular+One&display=swap");

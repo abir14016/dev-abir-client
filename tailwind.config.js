@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  variants: {
+    backgroundColor: ['hover', 'active'],
+  },
   daisyui: {
     themes: [
       {
@@ -30,7 +33,13 @@ module.exports = {
     ],
   },
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Comforter: ["Comforter Brush", "cursive"],
+        Secular: ["Secular One", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
+      },
+    },
   },
   plugins: [require("daisyui")],
 }
