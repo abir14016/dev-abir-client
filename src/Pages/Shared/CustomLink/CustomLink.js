@@ -8,7 +8,7 @@ function CustomLink({ children, to, ...props }) {
     return (
         <div>
             <Link
-                style={{ backgroundColor: match ? "green" : "" }}
+                style={{ backgroundColor: match ? "linear-gradient(to right, #4880EC, #019CAD)" : "" }}
                 to={to}
                 {...props}
             >
