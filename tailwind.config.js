@@ -38,6 +38,7 @@ module.exports = {
         Comforter: ["Comforter Brush", "cursive"],
         Secular: ["Secular One", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],
+        Raleway: ["Raleway", "sans-serif"],
       },
     },
   },
