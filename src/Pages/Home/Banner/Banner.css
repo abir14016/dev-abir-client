@@ -1,3 +1,9 @@
 .extraboldText {
   font-weight: 1200px;
 }
+.download-resume-button:hover {
+  background-image: linear-gradient(to right, #f84f55, #df2774);
+}
+.banner-image:hover {
+  background-image: linear-gradient(to right, #df2774, #f84f55);
+}
