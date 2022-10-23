@@ -75,7 +75,7 @@ const Header = ({ children }) => {
     </>
     return (
         <div data-theme={dark ? "dark" : "light"} className="App overflow-y-scroll" style={dark ? darkmood : lightmood}>
-            <div className='sticky top-0 z-50 navbar px-2 md:px-8 lg:px-28 py-0 md:py-0 lg:py-11 xl:py-12 bg-accent md:bg-accent lg:bg-transparent xl:bg-transparent'>
+            <div className='navbar px-2 md:px-8 lg:px-28 py-0 md:py-0 lg:py-11 xl:py-12 bg-accent md:bg-accent lg:bg-transparent xl:bg-transparent'>
                 <div className="navbar-start">
                     <Link to='/'
                         className="btn btn-ghost normal-case text-4xl font-extrabold font-Secular tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"><span className='font-Comforter'>A</span>bir
