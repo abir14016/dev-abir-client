@@ -34,16 +34,16 @@ const Banner = () => {
                 </div>
                 <p className='font-Raleway mt-4 font-bold'>Welcome! Are you looking for a Full STACK <span className='text-secondary'>(MERN)</span> Web Developer for your company. Here I'm a full stack web developer with a skill set of JavaScript, React, Node, Express, MongoDB etc. Let's talk together.</p>
                 <div className='flex justify-start mt-5'>
-                        <a className='flex justify center items-center bg-gradient-to-r from-secondary to-primary rounded-3xl px-5 py-2 text-xl font-lightbold text-white download-resume-button transition duration-300' target="_blank" href="https://drive.google.com/file/d/1F-2OCc8JKksiVVgpICDA71o4Botk1WkY/view?usp=sharing">
-                            <p className='mr-2'>View Resume</p>
-                            <FontAwesomeIcon className='mt-1' icon="fa-solid fa-arrow-right" />
-                        </a>
+                    <a className='flex justify center items-center bg-gradient-to-r from-secondary to-primary rounded-3xl px-5 py-2 text-md font-lightbold text-white download-resume-button transition duration-300' target="_blank" href="https://drive.google.com/file/d/1F-2OCc8JKksiVVgpICDA71o4Botk1WkY/view?usp=sharing" rel='noreferrer'>
+                        <p className='mr-2'>View Resume</p>
+                        <FontAwesomeIcon className='mt-1' icon="fa-solid fa-arrow-right" />
+                    </a>
                 </div>
             </div>
             <div className='flex justify-center md:hidden lg:hidden xl:hidden'>
-                    <img className='w-full bg-gradient-to-r from-primary to-secondary banner-image px-3 pt-3 rounded-2xl drop-shadow-xl transition duration-300' src={abir1} alt="abir-1-pic" />
-                </div>
-            <div className='bg-base-100 rounded-2xl'>
+                <img className='w-full bg-gradient-to-r from-primary to-secondary banner-image px-3 pt-3 rounded-2xl drop-shadow-xl transition duration-300' src={abir1} alt="abir-1-pic" />
+            </div>
+            <div className='bg-base-100 rounded-2xl pb-4 md:pb-8 lg:pb-10 xl:pb-12'>
                 <div className='hidden md:flex lg:flex xl:flex justify-center md:mt-[-60px] lg:mt-[100px] xl:mt-[-100px]'>
                     <img className='w-2/6 bg-gradient-to-r from-primary to-secondary banner-image px-3 pt-3 rounded-2xl drop-shadow-xl transition duration-300' src={abir1} alt="abir-1-pic" />
                 </div>
@@ -120,16 +120,16 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className='flex justify-center'>
-                        <a className='flex justify center items-center bg-gradient-to-r from-secondary to-primary rounded-3xl px-5 py-3 text-xl font-lightbold text-white download-resume-button transition duration-300' href={"https://cutt.ly/2NevwCK"} rel="noreferrer" download>
-                            <FontAwesomeIcon icon="fa-solid fa-download" />
-                            <p className='ml-2'>Download Resume</p>
-                        </a>
+                    <a className='flex justify center items-center bg-gradient-to-r from-secondary to-primary rounded-3xl px-5 py-3 text-md font-lightbold text-white download-resume-button transition duration-300' href={"https://cutt.ly/2NevwCK"} rel="noreferrer" download>
+                        <FontAwesomeIcon icon="fa-solid fa-download" />
+                        <p className='ml-2'>Download Resume</p>
+                    </a>
                 </div>
                 <div className='flex md:hidden lg:hidden xl:hidden justify-center mt-5'>
-                <a className='flex justify center items-center bg-gradient-to-r from-secondary to-primary rounded-3xl px-5 py-3 text-xl font-lightbold text-white download-resume-button transition duration-300' href="https://drive.google.com/file/d/1F-2OCc8JKksiVVgpICDA71o4Botk1WkY/view?usp=sharing" target="_blank">
-                <FontAwesomeIcon className='mt-1' icon="fa-solid fa-arrow-right" />
-                            <p className='ml-2'>View Resume</p>
-                        </a>
+                    <a className='flex justify center items-center bg-gradient-to-r from-secondary to-primary rounded-3xl px-5 py-3 text-md font-lightbold text-white download-resume-button transition duration-300' href="https://drive.google.com/file/d/1F-2OCc8JKksiVVgpICDA71o4Botk1WkY/view?usp=sharing" target="_blank" rel='noreferrer'>
+                        <p className='mr-2'>View Resume</p>
+                        <FontAwesomeIcon className='mt-1' icon="fa-solid fa-arrow-right" />
+                    </a>
                 </div>
             </div>
         </div>
