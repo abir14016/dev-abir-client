@@ -1,43 +1,49 @@
 [
   {
     "_id": "6359140be8007121dee3b6ad",
-    "icon": "https://i.ibb.co/C8ty5Tb/react.png",
-    "color": "frontend",
+    "icon": "fa-solid fa-laptop-code",
+    "color": "#4338ca",
+    "bgColor": "#fcf4ff",
     "name": "Frontend Development",
     "about": "male"
   },
   {
     "_id": "6359140b6b743067156ad43c",
-    "icon": "https://i.ibb.co/C8ty5Tb/react.png",
-    "color": "backend",
+    "icon": "fa-solid fa-code-branch",
+    "color": "#7e22ce",
+    "bgColor": "#fefaf0",
     "name": "Backend Development",
     "about": "female"
   },
   {
     "_id": "6359140b69868ad82a9ce553",
-    "icon": "https://i.ibb.co/C8ty5Tb/react.png",
-    "color": "primary",
+    "icon": "fa-solid fa-code",
+    "color": "#066dbe",
+    "bgColor": "#fcf4ff",
     "name": "Ui/Ux Design",
     "about": "male"
   },
   {
     "_id": "6359140b67d20473b8099b09",
-    "icon": "https://i.ibb.co/C8ty5Tb/react.png",
-    "color": "primary",
+    "icon": "fa-brands fa-square-js",
+    "color": "#f0db4f",
+    "bgColor": "#fff4f4",
     "name": "Javascript Development",
     "about": "male"
   },
   {
     "_id": "6359140b529a90160d05af8a",
-    "icon": "https://i.ibb.co/C8ty5Tb/react.png",
-    "color": "warning",
+    "icon": "fa-brands fa-node",
+    "color": "#3c873a",
+    "bgColor": "#fff0f8",
     "name": "NodeJS Development",
     "about": "female"
   },
   {
     "_id": "6359140b92ebef6b2cc74023",
-    "icon": "https://i.ibb.co/C8ty5Tb/react.png",
-    "color": "error",
+    "icon": "fa-brands fa-react",
+    "color": "#61DBFB",
+    "bgColor": "#f3faff",
     "name": "React Development",
     "about": "male"
   }

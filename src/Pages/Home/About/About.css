@@ -2,3 +2,6 @@
   background: linear-gradient(to right, #f84f55, #df2774);
   height: 2px;
 }
+.about-image:hover {
+  background-image: linear-gradient(to right, #007071, #7edbe2);
+}

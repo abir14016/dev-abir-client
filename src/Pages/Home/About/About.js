@@ -19,7 +19,7 @@ const About = () => {
             <hr class="block md:hidden lg:hidden xl:hidden my-4 w-full h-1 bg-gradient-to-r from-primary to-secondary rounded border-0 md:my-10" />
             <div className='block md:flex lg:flex xl:flex justify-center'>
                 <div className='mr-0 md:mr-5 lg:mr-10 xl:mr-12 mb-4 md:mb-0'>
-                    <img className='bg-gradient-to-r from-[#7edbe2] to-[#007071] rounded-2xl' src={abir2} alt="abir-pic-2" />
+                    <img className='bg-gradient-to-r from-[#7edbe2] to-[#007071] rounded-2xl about-image' src={abir2} alt="abir-pic-2" />
                 </div>
                 <div className='font-Raleway font-semibold'>
                     <p className='text-start text-gray-500 mb-3'>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.</p>
@@ -28,7 +28,7 @@ const About = () => {
             </div>
             <div className='mt-5 md:mt-8 lg:mt-12 xl:mt-16'>
                 <h2 className="text-3xl text-left font-Poppins font-bold mr-5">What I do!</h2>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-10 xl:gap-10 mt-2 md:mt-8 lg:mt-12 xl:mt-12'>
                     {
                         services.map(service => <Service
                             key={service._id}
