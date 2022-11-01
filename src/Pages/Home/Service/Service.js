@@ -17,7 +17,7 @@ const Service = ({ service }) => {
             </div>
 
             <div>
-                <h3 className="text-start text-xl font-bold">{name}</h3>
+                <h3 className="text-start text-xl font-bold group-hover:text-secondary">{name}</h3>
                 <p className='text-start mt-3 text-gray-500 font-semibold'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam unde illo, dolore aliquam provident fuga saepe nihil incidunt harum distinctio.</p>
             </div>
         </div>
