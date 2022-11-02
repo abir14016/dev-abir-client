@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import abir2 from '../../../assests/images/abir/abir-2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import CountUp from 'react-countup';
+import VisibilitySensor from "react-visibility-sensor";
 import './About.css';
 import Service from '../Service/Service';
 
 const About = () => {
+    const [focus, setFocus] = React.useState(false);
     const [services, setServices] = useState([]);
     useEffect(() => {
         fetch("services.json")
@@ -34,7 +37,23 @@ const About = () => {
                                 <h3 className='text-3xl'>📌</h3>
                             </div>
                             <div className="stat-title">Contributions</div>
-                            <div className="stat-value text-primary">480+</div>
+                            <div className="stat-value text-primary">
+                                <CountUp start={focus ? 0 : null} end={480} duration={2} redraw={true} suffix="+">
+                                    {({ countUpRef }) => (
+                                        <div>
+                                            <span ref={countUpRef} />
+                                            <VisibilitySensor
+                                                onChange={isVisible => {
+                                                    if (isVisible) {
+                                                        setFocus(true);
+                                                    }
+                                                }}
+                                            >
+                                            </VisibilitySensor>
+                                        </div>
+                                    )}
+                                </CountUp>
+                            </div>
                             <div className="stat-desc">Jan 1st - Nov 1st</div>
                         </div>
 
@@ -43,7 +62,23 @@ const About = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
                             </div>
                             <div className="stat-title">Repositories</div>
-                            <div className="stat-value text-secondary">50+</div>
+                            <div className="stat-value text-secondary">
+                                <CountUp start={focus ? 0 : null} end={50} duration={2} redraw={true} suffix="+">
+                                    {({ countUpRef }) => (
+                                        <div>
+                                            <span ref={countUpRef} />
+                                            <VisibilitySensor
+                                                onChange={isVisible => {
+                                                    if (isVisible) {
+                                                        setFocus(true);
+                                                    }
+                                                }}
+                                            >
+                                            </VisibilitySensor>
+                                        </div>
+                                    )}
+                                </CountUp>
+                            </div>
                             <div className="stat-desc">↗︎ 21% more than last month</div>
                         </div>
 
@@ -52,7 +87,24 @@ const About = () => {
                                 <h3 className='text-3xl'>🧰</h3>
                             </div>
                             <div className="stat-title">Projects</div>
-                            <div className="stat-value text-[#580ef8]">15+</div>
+                            <div className="stat-value text-[#580ef8]">
+                                <CountUp start={focus ? 0 : null} end={15} duration={2} redraw={true} >
+                                    {({ countUpRef }) => (
+                                        <div>
+                                            <span ref={countUpRef} />
+                                            <VisibilitySensor
+                                                onChange={isVisible => {
+                                                    if (isVisible) {
+                                                        setFocus(true);
+                                                    }
+                                                }}
+                                            >
+                                                <span>+</span>
+                                            </VisibilitySensor>
+                                        </div>
+                                    )}
+                                </CountUp>
+                            </div>
                             <div className="stat-desc">↘︎ 5+ running</div>
                         </div>
 
