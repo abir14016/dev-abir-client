@@ -3,9 +3,8 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import VisibilitySensor from "react-visibility-sensor";
 
-const Skill = ({ skill }) => {
-    const { icon, title, number } = skill;
-    const secondaryColor = "#de2674";
+const FrontendSkill = ({ frontendSkill }) => {
+    const { icon, title, number } = frontendSkill;
     return (
         <div className='flex justify-center'>
             <div>
@@ -13,20 +12,18 @@ const Skill = ({ skill }) => {
                     {({ isVisible }) => {
                         const percentage = isVisible ? number : 0;
                         return (
-                            <div style={{ width: 100 }} className="bg-accent rounded-full">
+                            <div className="bg-base-100 rounded-full w-[90px] md:w-[90px] lg:w-[100px]">
                                 <CircularProgressbar className='font-bold'
                                     value={percentage}
                                     text={`${percentage}%`}
                                     styles={buildStyles({
-
                                         // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
                                         strokeLinecap: 'round',
-
                                         // Text size
                                         textSize: '17px',
                                         pathTransitionDuration: 1.5,
                                         // Colors
-                                        pathColor: `${secondaryColor}`,
+                                        pathColor: '#de2674',
                                         textColor: 'rgb(100 116 139)',
                                         trailColor: '#d6d6d6',
                                         backgroundColor: '#ffffff',
@@ -45,4 +42,4 @@ const Skill = ({ skill }) => {
     );
 };
 
-export default Skill;
+export default FrontendSkill;
