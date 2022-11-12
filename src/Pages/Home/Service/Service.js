@@ -11,7 +11,7 @@ const Service = ({ service }) => {
         <div className="group flex justify-start border border-accent p-5 rounded-2xl bg-accent shadow-lg">
             <div className="mr-2">
                 <div className='relative'>
-                    <div class=" bg-base-100 mask mask-hexagon group-hover:rotate-90 group-hover:bg-gradient-to-r from-primary to-secondary duration-500 transform h-24 w-24"></div>
+                    <div className=" bg-base-100 mask mask-hexagon group-hover:rotate-90 group-hover:bg-gradient-to-r from-primary to-secondary duration-500 transform h-24 w-24"></div>
                     <FontAwesomeIcon style={{ color: `${color}` }} className='font-bold absolute left-0 right-0 my-auto bottom-0 top-0 h-[40px] mx-auto w-[40px] text-4xl transform duration-500' icon={icon} />
                 </div>
             </div>

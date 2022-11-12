@@ -69,37 +69,37 @@ const Skills = () => {
             id: "1",
             icon: javascript,
             title: "Javascript",
-            number: 20,
+            number: 70,
         },
         {
             id: "2",
             icon: react,
             title: "React.JS",
-            number: 20,
+            number: 60,
         },
         {
             id: "3",
             icon: typescript,
             title: "Typescript",
-            number: 20,
+            number: 40,
         },
         {
             id: "4",
             icon: nextjs,
             title: "NextJS",
-            number: 20,
+            number: 50,
         },
         {
             id: "5",
             icon: redux,
             title: "Redux",
-            number: 20,
+            number: 30,
         },
         {
             id: "6",
             icon: firebase,
             title: "Firebase",
-            number: 20,
+            number: 80,
         }
     ]
 
