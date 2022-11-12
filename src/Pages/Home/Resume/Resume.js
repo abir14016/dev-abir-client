@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import abir3 from '../../../assests/images/abir/abir-3.png';
 import abir4 from '../../../assests/images/abir/abir-4.png';
 import Skills from '../Skills/Skills';
+import { ProgressBar } from "react-progressbar-fancy";
+import './Resume.css';
 // import VisibilitySensor from "react-visibility-sensor";
 
 
@@ -26,60 +28,69 @@ const Resume = () => {
                 </div>
                 <div className="flex flex-col gap-4 w-full my-8 md:my-0">
                     <h2 className="text-xl text-left font-Poppins font-bold mr-5"><span><FontAwesomeIcon className='text-primary mr-3' icon="fa-solid fa-user-gear" /></span>Working skills</h2>
-                    <div>
-                        <p className="flex justify-between">
+                    <div className='mb-2'>
+                        <p className="flex justify-between px-4 pb-2 font-semibold">
                             <span>Frontend Development</span>
                             <span>90%</span>
                         </p>
-                        <progress
-                            class="progress progress-secondary w-full"
-                            value="90"
-                            max="100"
-                        ></progress>
+                        <ProgressBar
+                            primaryColor='#f84f54'
+                            secondaryColor='#de2674'
+                            hideText
+                            score={90}
+                        />
                     </div>
-                    <div>
-                        <p className="flex justify-between">
+
+                    <div className='mb-2'>
+                        <p className="flex justify-between px-4 pb-2 font-semibold">
                             <span>Backend Development</span>
                             <span>70%</span>
                         </p>
-                        <progress
-                            class="progress progress-secondary w-full"
-                            value="70"
-                            max="100"
-                        ></progress>
+                        <ProgressBar
+                            primaryColor='#f84f54'
+                            secondaryColor='#de2674'
+                            hideText
+                            score={70}
+                        />
                     </div>
-                    <div>
-                        <p className="flex justify-between">
+
+                    <div className='mb-2'>
+                        <p className="flex justify-between px-4 pb-2 font-semibold">
                             <span>Ui/Ux Design</span>
                             <span>85%</span>
                         </p>
-                        <progress
-                            class="progress progress-secondary w-full"
-                            value="85"
-                            max="100"
-                        ></progress>
+                        <ProgressBar
+                            primaryColor='#f84f54'
+                            secondaryColor='#de2674'
+                            hideText
+                            score={85}
+                        />
                     </div>
-                    <div>
-                        <p className="flex justify-between">
+
+                    <div className='mb-2'>
+                        <p className="flex justify-between px-4 pb-2 font-semibold">
                             <span>App Development</span>
                             <span>50%</span>
                         </p>
-                        <progress
-                            class="progress progress-secondary w-full"
-                            value="50"
-                            max="100"
-                        ></progress>
+                        <ProgressBar
+                            primaryColor='#f84f54'
+                            secondaryColor='#de2674'
+                            hideText
+                            score={50}
+                        />
                     </div>
+
                     <div>
-                        <p className="flex justify-between">
+                        <p className="flex justify-between px-4 pb-2 font-semibold">
                             <span>Problem Solving</span>
-                            <span>60%</span>
+                            <span>40%</span>
                         </p>
-                        <progress
-                            class="progress progress-secondary w-full"
-                            value="60"
-                            max="100"
-                        ></progress>
+                        <ProgressBar
+                            primaryColor='#f84f54'
+                            secondaryColor='#de2674'
+                            hideText
+                            score={40}
+                        />
                     </div>
                 </div>
             </div>
