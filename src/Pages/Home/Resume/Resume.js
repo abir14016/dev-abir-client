@@ -7,6 +7,7 @@ import { ProgressBar } from "react-progressbar-fancy";
 import './Resume.css';
 import VisibilitySensor from "react-visibility-sensor";
 import CountUp from 'react-countup';
+import Courses from '../Home/Courses/Courses';
 
 
 const Resume = () => {
@@ -217,6 +218,7 @@ const Resume = () => {
                 </div>
             </div>
             <Skills></Skills>
+            <Courses></Courses>
         </div>
     );
 };
