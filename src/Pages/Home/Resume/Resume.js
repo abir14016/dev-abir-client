@@ -8,6 +8,8 @@ import './Resume.css';
 import VisibilitySensor from "react-visibility-sensor";
 import CountUp from 'react-countup';
 import Courses from '../Home/Courses/Courses';
+import Education from '../Home/Education/Education';
+// import Awards from '../Home/Awards/Awards';
 
 
 const Resume = () => {
@@ -219,6 +221,8 @@ const Resume = () => {
             </div>
             <Skills></Skills>
             <Courses></Courses>
+            <Education></Education>
+            {/* <Awards></Awards> */}
         </div>
     );
 };
