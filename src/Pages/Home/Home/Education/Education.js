@@ -3,33 +3,42 @@ import React from 'react';
 import iu from "../../../../assests/images/education/iu.png";
 import college from "../../../../assests/images/education/college.png";
 import school from "../../../../assests/images/education/school.png";
-import ph from "../../../../assests/images/education/images.jpg";
+import ph from "../../../../assests/images/education/ph.jpg";
 
 const Education = () => {
     const educations = [
         {
             id: 0,
-            degreeName: "Bsc Enggiering in Computer Science & Engineering at Islamic University",
+            degreeName: "Bsc Enggiering in Computer Science & Engineering",
+            institution: "Islamic University",
+            link: "https://www.iu.ac.bd",
             PassingYear: "2021-2025",
-            logo: iu
+            logo: iu,
+            cgpa: "pending..."
         },
         {
             id: 1,
-            degreeName: "Higher Secondary Certificate (HSC) At Mia Jinnah Alam College",
+            degreeName: "Higher Secondary Certificate (HSC)",
+            institution: "Mia Jinnah Alam Degree College",
+            link: "https://www.sohopathi.com/miah-jinnah-alam-degree-college-2/",
             PassingYear: "2017-2019",
             logo: college,
             gpa: "5.00/5.00"
         },
         {
             id: 2,
-            degreeName: "Secondary School Certificate (SSC) At Garaganj Secondary School",
+            degreeName: "Secondary School Certificate (SSC)",
+            institution: "Garaganj Secondary School",
+            link: "https://www.sohopathi.com/garagonj-high-school/",
             PassingYear: "2015-2017",
             logo: school,
             gpa: "5.00/5.00"
         },
         {
             id: 3,
-            degreeName: "Junior School Certificate (JSC) At Garaganj Secondary School",
+            degreeName: "Junior School Certificate (JSC)",
+            institution: "Garaganj Secondary School",
+            link: "https://www.sohopathi.com/garagonj-high-school/",
             PassingYear: "2014",
             logo: school,
             gpa: "4.64/5.00"
@@ -37,8 +46,11 @@ const Education = () => {
         {
             id: 4,
             degreeName: "Complete Web Development Course With Jhankar Mahbub",
+            institution: "Programming Hero",
+            link: "https://web.programming-hero.com",
             PassingYear: "2022-2022",
-            logo: ph
+            logo: ph,
+            status: "completed"
         },
     ]
     return (
@@ -57,8 +69,10 @@ const Education = () => {
                             <span className='badge badge-lg'>{education.PassingYear}</span>
                         </div>
                         <div className='pl-3 mb-8 mt-6 text-left'>
-                            <p className=''>{education.degreeName}</p>
-                            <p className='text-[#808da4] text-sm'>GPA : {education?.gpa || 'Pending...'}</p>
+                            <p className='font-semibold'>{education.degreeName} at <a rel="noopener noreferrer" target="_blank" href={education.link} className='link link-hover text-blue-600'>{education.institution}</a></p>
+                            <p className='text-slate-600 font-semibold text-sm'>
+                                {(education.gpa) ? "gpa" : (education.cgpa) ? "cgpa" : "status"} : {education.gpa || education.status || education.cgpa}
+                            </p>
                         </div>
                     </div>)
                 }
