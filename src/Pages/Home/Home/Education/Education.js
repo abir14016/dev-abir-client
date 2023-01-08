@@ -9,10 +9,10 @@ const Education = () => {
     const educations = [
         {
             id: 0,
-            degreeName: "Bsc Enggiering in Computer Science & Engineering",
+            degreeName: "Bsc. Enggiering in Computer Science & Engineering",
             institution: "Islamic University",
             link: "https://www.iu.ac.bd",
-            PassingYear: "2021-2025",
+            PassingYear: "2018-2023",
             logo: iu,
             cgpa: "pending..."
         },
@@ -21,7 +21,7 @@ const Education = () => {
             degreeName: "Higher Secondary Certificate (HSC)",
             institution: "Mia Jinnah Alam Degree College",
             link: "https://www.sohopathi.com/miah-jinnah-alam-degree-college-2/",
-            PassingYear: "2017-2019",
+            PassingYear: "2016",
             logo: college,
             gpa: "5.00/5.00"
         },
@@ -30,7 +30,7 @@ const Education = () => {
             degreeName: "Secondary School Certificate (SSC)",
             institution: "Garaganj Secondary School",
             link: "https://www.sohopathi.com/garagonj-high-school/",
-            PassingYear: "2015-2017",
+            PassingYear: "2013",
             logo: school,
             gpa: "5.00/5.00"
         },
@@ -39,7 +39,7 @@ const Education = () => {
             degreeName: "Junior School Certificate (JSC)",
             institution: "Garaganj Secondary School",
             link: "https://www.sohopathi.com/garagonj-high-school/",
-            PassingYear: "2014",
+            PassingYear: "2011",
             logo: school,
             gpa: "4.64/5.00"
         },
@@ -48,7 +48,7 @@ const Education = () => {
             degreeName: "Complete Web Development Course With Jhankar Mahbub",
             institution: "Programming Hero",
             link: "https://web.programming-hero.com",
-            PassingYear: "2022-2022",
+            PassingYear: "2022",
             logo: ph,
             status: "completed"
         },
@@ -66,7 +66,7 @@ const Education = () => {
                             <img style={{ width: "40px", height: "40px" }} className='mask mask-hexagon' src={education.logo} alt="edu_logo" />
                         </div>
                         <div className='mb-4 -mt-7 pl-3 text-left'>
-                            <span className='badge badge-lg'>{education.PassingYear}</span>
+                            <span className='badge badge-lg hover:badge-primary'>{education.PassingYear}</span>
                         </div>
                         <div className='pl-3 mb-8 mt-6 text-left'>
                             <p className='font-semibold'>{education.degreeName} at <a rel="noopener noreferrer" target="_blank" href={education.link} className='link link-hover text-blue-600'>{education.institution}</a></p>
