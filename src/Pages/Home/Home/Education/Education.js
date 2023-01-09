@@ -66,7 +66,7 @@ const Education = () => {
                             <img style={{ width: "40px", height: "40px" }} className='mask mask-hexagon' src={education.logo} alt="edu_logo" />
                         </div>
                         <div className='mb-4 -mt-7 pl-3 text-left'>
-                            <span className='badge badge-lg hover:badge-primary'>{education.PassingYear}</span>
+                            <p className=' group badge badge-lg hover:badge-primary'> <span><FontAwesomeIcon className='mr-2 text-primary group-hover:text-accent' icon="fa-solid fa-clock-rotate-left" /></span>{education.PassingYear}</p>
                         </div>
                         <div className='pl-3 mb-8 mt-6 text-left'>
                             <p className='font-semibold'>{education.degreeName} at <a rel="noopener noreferrer" target="_blank" href={education.link} className='link link-hover text-blue-600'>{education.institution}</a></p>
