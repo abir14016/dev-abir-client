@@ -30,7 +30,7 @@ const awards = [
     },
     {
         id: 2,
-        title: "Black Belt",
+        title: "Black Belts",
         subTitle: "complete web development course finished on time",
         modal: "black-belt-modal",
         picture: blackBelt,
