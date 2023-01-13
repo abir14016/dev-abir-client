@@ -20,6 +20,7 @@ const Resume = () => {
                 <h2 className="text-4xl font-Poppins font-bold mr-5"><span><FontAwesomeIcon className='mr-3 text-primary' icon="fa-solid fa-scroll" /></span>Resume</h2>
                 <hr className="hidden md:block lg:block xl:block my-4 w-48 h-1 bg-gradient-to-r from-primary to-secondary rounded border-0" />
             </div>
+            <hr className="block md:hidden lg:hidden xl:hidden my-4 w-full h-1 bg-gradient-to-r from-primary to-secondary rounded border-0 md:my-10" />
             <div className="block md:grid lg:grid grid-cols-2 gap-20 px-[5%] ">
                 <div className='bg-secondary rounded-2xl group hover:bg-primary'>
                     <div className='bg-accent -rotate-6 rounded-2xl group-hover:rotate-6 transform duration-700'>
