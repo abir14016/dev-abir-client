@@ -44,7 +44,7 @@ const Works = () => {
             "id": "5",
             "img": "https://i.ibb.co/MSzwq75/go-hajj.png",
             "live": "https://moonlit-genie-7e3353.netlify.app/",
-            "repo": "https://github.com/imrannaazir/go-hajj",
+            "repo": "https://github.com/imrannaazir/go-haj",
             "title": "Go Hajj",
             "description": "This is a airline agency service provider website. See reviews, graph and blogs",
             "skills": ["HTML", "CSS", "JAVASCRIPT", "REACT JS", "React Router"]

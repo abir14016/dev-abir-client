@@ -4,6 +4,7 @@ import { fas, faLaptopCode, faCodeBranch } from '@fortawesome/free-solid-svg-ico
 import { faFontAwesome, faReact, faNode, faJsSquare } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
 const Service = ({ service }) => {
     library.add(fas, faFontAwesome, faReact, faNode, faJsSquare, faLaptopCode, faCodeBranch);
     const { icon, name, about, color } = service;
