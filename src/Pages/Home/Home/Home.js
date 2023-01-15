@@ -5,6 +5,7 @@ import Blogs from '../Blogs/Blogs';
 import Resume from '../Resume/Resume';
 import Works from '../Works/Works';
 
+
 const Home = () => {
     return (
         <div>
