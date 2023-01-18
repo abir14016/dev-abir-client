@@ -1,0 +1,60 @@
+[
+  {
+    "_id": "1",
+    "tag": "fa-solid fa-laptop-code",
+    "picture": "../src/assests/images/",
+    "title": "#4338ca",
+    "details": "#fcf4ff",
+    "bloggerName": "Frontend Development",
+    "blogDate": "male"
+  },
+  {
+    "_id": "2",
+    "tag": "fa-solid fa-code-branch",
+    "picture": "",
+    "title": "#7e22ce",
+    "details": "#fefaf0",
+    "bloggerName": "Backend Development",
+    "blogDate": "female"
+  },
+  {
+    "_id": "3",
+    "tag": "fa-solid fa-code",
+
+    "picture": "",
+    "title": "#066dbe",
+    "details": "#fcf4ff",
+    "bloggerName": "Ui/Ux Design",
+    "blogDate": "male"
+  },
+  {
+    "_id": "4",
+    "tag": "fa-brands fa-square-js",
+
+    "picture": "",
+    "title": "#f0db4f",
+    "details": "#fff4f4",
+    "bloggerName": "Javascript Development",
+    "blogDate": "male"
+  },
+  {
+    "_id": "5",
+    "tag": "fa-brands fa-node",
+
+    "picture": "",
+    "title": "#3c873a",
+    "details": "#fff0f8",
+    "bloggerName": "NodeJS Development",
+    "blogDate": "female"
+  },
+  {
+    "_id": "6",
+    "tag": "fa-brands fa-react",
+
+    "picture": "",
+    "title": "#61DBFB",
+    "details": "#f3faff",
+    "bloggerName": "React Development",
+    "blogDate": "male"
+  }
+]
