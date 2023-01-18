@@ -6,11 +6,6 @@ import lightBG from '../../assests/images/backgrounds/light-bg.svg';
 // import CustomLink from '../Shared/CustomLink/CustomLink';
 
 const Header = ({ children }) => {
-    // const scrollWithOffset = (el) => {
-    //     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    //     const yOffset = -80;
-    //     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
-    // }
     const darkmood = {
         width: '100vw',
         height: '100vh',
@@ -81,7 +76,7 @@ const Header = ({ children }) => {
     </>
     return (
         <div data-theme={dark ? "dark" : "light"} className="App overflow-y-scroll" style={dark ? darkmood : lightmood}>
-            <div className='navbar px-2 md:px-8 lg:px-28 py-0 md:py-0 lg:py-11 xl:py-12 bg-accent md:bg-accent lg:bg-transparent xl:bg-transparent'>
+            <div className='navbar sticky top-0 z-30 px-2 md:px-8 lg:px-28 my-0 md:my-0 lg:my-8 xl-my-9 py-2 md:py-3 backdrop-blur bg-transparent'>
                 <div className="navbar-start">
                     <Link to='/'
                         className="btn btn-ghost normal-case text-4xl font-extrabold font-Secular tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"><span className='font-Comforter'>A</span>bir
@@ -121,7 +116,6 @@ const Header = ({ children }) => {
                         }
                     </div>
                 </div>
-
             </div>
             {children}
         </div>
