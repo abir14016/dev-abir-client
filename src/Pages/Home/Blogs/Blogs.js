@@ -13,10 +13,10 @@ import githubSquareImage from '../../../../src/assests/images/blogs/github/githu
 import githubRectangleImage from '../../../../src/assests/images/blogs/github/github-rectangle.jpg';
 import machineSquareImage from '../../../../src/assests/images/blogs/machine-learning/machine-square.jpg';
 import machineRectangleImage from '../../../../src/assests/images/blogs/machine-learning/machine-rectangle.jpg';
-import Blog from './Blog/Blog';
-import Web from './Web/Web';
-import Programming from './Programming/Programming';
-import Github from './Github/Github';
+import AllBlog from './AllBlogs/AllBlog';
+import Web from './WebBlogs/WebBlogs';
+import Programming from './ProgrammingBlogs/ProgrammingBlogs';
+import Github from './GithubBlogs/GithubBlogs';
 
 const Blogs = () => {
     const blogs = [
@@ -378,19 +378,33 @@ const Blogs = () => {
             </div>
             <hr className="block md:hidden lg:hidden xl:hidden my-4 w-full h-1 bg-gradient-to-r from-primary to-secondary rounded border-0 md:my-10" />
             <div className="">
-
-                <Link to='/' className='btn btn-xs rounded-full hover:bg-gradient-to-r from-primary to-secondary font-Poppins hover:text-white inline-flex items-center justify-center'>
-                    <div className=''>
-                        <span className='px-1'>web development</span>
-                        <span className='bg-white rounded-full text-neutral p-1'>6</span>
-                    </div>
+                <Link to='/blogs' className='bg-accent rounded-full hover:bg-gradient-to-r from-primary to-secondary font-Poppins hover:text-white px-2 py-1 text-xs inline-flex justify-center items-center font-bold'>
+                    <p className='px-1'>All</p>
+                    <div className='bg-white rounded-full text-neutral p-[2px] w-5 h-5'><p>{webs.length}</p></div>
                 </Link>
-                <Link to='/' className='bg-accent rounded-full hover:bg-gradient-to-r from-primary to-secondary font-Poppins hover:text-white px-2 py-2 text-xs inline-flex justify-center items-center font-bold'>
+                <Link to='web-blogs' className='bg-accent rounded-full hover:bg-gradient-to-r from-primary to-secondary font-Poppins hover:text-white px-2 py-1 text-xs inline-flex justify-center items-center font-bold'>
                     <p className='px-1'>web development</p>
                     <div className='bg-white rounded-full text-neutral p-[2px] w-5 h-5'><p>{webs.length}</p></div>
                 </Link>
+                <Link to='programming-blogs' className='bg-accent rounded-full hover:bg-gradient-to-r from-primary to-secondary font-Poppins hover:text-white px-2 py-1 text-xs inline-flex justify-center items-center font-bold'>
+                    <p className='px-1'>programming</p>
+                    <div className='bg-white rounded-full text-neutral p-[2px] w-5 h-5'><p>{webs.length}</p></div>
+                </Link>
+                <Link to='github-blogs' className='bg-accent rounded-full hover:bg-gradient-to-r from-primary to-secondary font-Poppins hover:text-white px-2 py-1 text-xs inline-flex justify-center items-center font-bold'>
+                    <p className='px-1'>github</p>
+                    <div className='bg-white rounded-full text-neutral p-[2px] w-5 h-5'><p>{webs.length}</p></div>
+                </Link>
             </div>
+            <h2>Blog showing here</h2>
             <Outlet></Outlet>
+            {/* <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+                {
+                    webs.map(web => <Web
+                        key={web._id}
+                        web={web}
+                    ></Web>)
+                }
+            </div> */}
         </div>
     );
 };

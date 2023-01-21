@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Github = () => {
+const GithubBlogs = () => {
     return (
         <div>
             <h2>Github blogs</h2>
@@ -8,4 +8,4 @@ const Github = () => {
     );
 };
 
-export default Github;
+export default GithubBlogs;

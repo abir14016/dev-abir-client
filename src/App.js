@@ -11,10 +11,10 @@ import Resume from './Pages/Home/Resume/Resume';
 import Works from './Pages/Home/Works/Works';
 import Blogs from './Pages/Home/Blogs/Blogs';
 import Contact from './Pages/Home/Contact/Contact';
-import Blog from './Pages/Home/Blogs/Blog/Blog';
-import Web from './Pages/Home/Blogs/Web/Web';
-import Programming from './Pages/Home/Blogs/Programming/Programming';
-import Github from './Pages/Home/Blogs/Github/Github';
+import AllBlogs from './Pages/Home/Blogs/AllBlogs/AllBlogs';
+import WebBlogs from './Pages/Home/Blogs/WebBlogs/WebBlogs';
+import ProgrammingBlogs from './Pages/Home/Blogs/ProgrammingBlogs/ProgrammingBlogs';
+import GithubBlogs from './Pages/Home/Blogs/GithubBlogs/GithubBlogs';
 
 function App() {
   return (
@@ -26,10 +26,10 @@ function App() {
         <Route path='/resume' element={<Resume></Resume>}></Route>
         <Route path='/works' element={<Works></Works>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}>
-          <Route index element={<Blog></Blog>}></Route>
-          <Route path='web-blogs' element={<Web></Web>}></Route>
-          <Route path='programming-blogs' element={<Programming></Programming>}></Route>
-          <Route path='github-blogs' element={<Github></Github>}></Route>
+          <Route index element={<AllBlogs></AllBlogs>}></Route>
+          <Route path='web-blogs' element={<WebBlogs></WebBlogs>}></Route>
+          <Route path='programming-blogs' element={<ProgrammingBlogs></ProgrammingBlogs>}></Route>
+          <Route path='github-blogs' element={<GithubBlogs></GithubBlogs>}></Route>
         </Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
