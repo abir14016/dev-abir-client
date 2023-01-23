@@ -13,10 +13,11 @@ import githubSquareImage from '../../../../src/assests/images/blogs/github/githu
 import githubRectangleImage from '../../../../src/assests/images/blogs/github/github-rectangle.jpg';
 import machineSquareImage from '../../../../src/assests/images/blogs/machine-learning/machine-square.jpg';
 import machineRectangleImage from '../../../../src/assests/images/blogs/machine-learning/machine-rectangle.jpg';
-import AllBlog from './AllBlogs/AllBlog';
-import Web from './WebBlogs/WebBlogs';
-import Programming from './ProgrammingBlogs/ProgrammingBlogs';
-import Github from './GithubBlogs/GithubBlogs';
+import AllBlog from './AllBlogs/AllBlogs';
+import WebBlogs from './WebBlogs/WebBlogs';
+import ProgrammingBlogs from './ProgrammingBlogs/ProgrammingBlogs';
+import GithubBlogs from './GithubBlogs/GithubBlogs';
+import BlogBanner from './BlogBanner/BlogBanner';
 
 const Blogs = () => {
     const blogs = [
@@ -377,6 +378,12 @@ const Blogs = () => {
                 <hr className="hidden md:block lg:block xl:block my-4 w-48 h-1 bg-gradient-to-r from-primary to-secondary rounded border-0" />
             </div>
             <hr className="block md:hidden lg:hidden xl:hidden my-4 w-full h-1 bg-gradient-to-r from-primary to-secondary rounded border-0 md:my-10" />
+
+            {/* blog banner */}
+            <BlogBanner></BlogBanner>
+            {/* blog banner */}
+
+            {/* blog menu */}
             <div className="">
                 <Link to='/blogs' className='bg-accent rounded-full hover:bg-gradient-to-r from-primary to-secondary font-Poppins hover:text-white px-2 py-1 text-xs inline-flex justify-center items-center font-bold'>
                     <p className='px-1'>All</p>
@@ -395,16 +402,14 @@ const Blogs = () => {
                     <div className='bg-white rounded-full text-neutral p-[2px] w-5 h-5'><p>{webs.length}</p></div>
                 </Link>
             </div>
-            <h2>Blog showing here</h2>
+            {/* blog menu */}
+
+            <h2>Blog showing hereeeee</h2>
+
+            {/* nested routes render here */}
             <Outlet></Outlet>
-            {/* <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
-                {
-                    webs.map(web => <Web
-                        key={web._id}
-                        web={web}
-                    ></Web>)
-                }
-            </div> */}
+            {/* nested routes render here */}
+
         </div>
     );
 };
