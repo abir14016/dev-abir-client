@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   variants: {
     backgroundColor: ['hover', 'active'],
+    extend: {
+      // ...
+      visibility: ['hover', 'focus'],
+    }
   },
   daisyui: {
     themes: [

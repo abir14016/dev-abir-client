@@ -56,7 +56,11 @@ body {
 }
 
 .content .content-overlay {
-  background: rgba(53, 71, 203, 0.7);
+  background: rgba(30, 58, 138, 0.6);
+  /* background-image: linear-gradient(
+    from bottom to top rgba(248, 79, 85, 0.7),
+    rgba(223, 39, 116, 0.7)
+  ); */
   position: absolute;
   /* height: 99%; */
   width: 100%;
@@ -116,16 +120,4 @@ body {
 
 .fadeIn-bottom {
   top: 80%;
-}
-
-.fadeIn-top {
-  top: 20%;
-}
-
-.fadeIn-left {
-  left: 20%;
-}
-
-.fadeIn-right {
-  left: 80%;
 }
