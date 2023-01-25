@@ -1,5 +1,5 @@
 import React from 'react';
-import './WebBlog.css';
+import './WebBlog.module.css';
 
 const WebBlog = ({ webBlog }) => {
     const text = webBlog.details.slice(0, 130);
