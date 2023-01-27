@@ -24,6 +24,8 @@ const Header = ({ children }) => {
     };
     const [dark, setDark] = useState(true);
     const [menu, setMenu] = useState(false);
+
+
     const menuItems = <>
         <Link to='/' className='bg-accent text-sm hover:bg-gradient-to-r from-primary to-secondary font-Poppins hover:text-white px-3 lg:px-5 py-2.5 rounded-md mr-0 lg:mr-5 text-left md:text-left lg:text-center xl:text-center flex items-center'>
             <div className='mr-2'>
