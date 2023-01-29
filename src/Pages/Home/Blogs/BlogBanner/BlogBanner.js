@@ -1,22 +1,56 @@
 import React from 'react';
 import bannerLeft from '../../../../assests/images/blogs/banner/banner-left.jpg';
+import bannerLeftModal from '../../../../assests/images/blogs/banner/banner-Left-Modal.png';
 import bannerRightTop from '../../../../assests/images/blogs/banner/banner-right-top.png';
 import bannerRightBottom from '../../../../assests/images/blogs/banner/banner-right-bottom.png';
 import './BlogBanner.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const BlogBanner = () => {
     const bannerLeftTitle = "What's the future of web development What's the future of web development ?"
     const bannerRightTopTitle = "Knoledge needed for a web developer ?"
     const bannerRightBottomTitle = "What are the basic of web development ?"
     return (
-        <div className='grid grid-cols-5 gap-x-5'>
+        <div className='grid grid-cols-5 gap-x-5 auto-rows-fr'>
 
             {/* demo modal */}
             <input type="checkbox" id="demo-modal" className="modal-toggle" />
-            <div className="modal">
+            <div className="modal text-left">
                 <div className="modal-box relative w-11/12 max-w-5xl h-screen">
                     <label htmlFor="demo-modal" className="btn btn-sm btn-circle btn-primary absolute right-2 top-2">✕</label>
-                    <img className='h-auto max-h-[100%] w-[100%] rounded-2xl border-4 border-blue-800' src={bannerLeft} alt="" />
+                    <img className='h-auto max-h-[100%] w-[100%] rounded-2xl border-4 border-blue-800' src={bannerLeftModal} alt="" />
+                    <h1 className='text-3xl'>{bannerLeftTitle}</h1>
+                    <div className='flex justify-between items-center my-6'>
+                        <div>
+                            <p>Abir Hasan</p>
+                            <p>January-29, 2023</p>
+                        </div>
+                        <div className='flex justify-end'>
+                            <p>facebook</p>
+                            <p>LinkedIn</p>
+                            <p>copy</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas repudiandae dolor nemo est explicabo similique laudantium! Libero, molestiae asperiores accusamus eveniet inventore dolore laboriosam laborum sunt, maxime commodi beatae culpa rerum officia tempore! Aspernatur voluptates sed vero aperiam dicta, ab doloribus rerum, deleniti eaque, eius ea. Repudiandae itaque pariatur et distinctio sunt iusto facilis voluptatem eaque molestiae optio? Eum maxime nobis commodi odit nostrum exercitationem pariatur explicabo. Dolor accusantium ipsa quibusdam illum maiores commodi. Dolores omnis aliquid magni rerum atque neque sapiente exercitationem reprehenderit maiores error quasi consequuntur, doloribus nisi sed ex ut necessitatibus numquam perferendis distinctio repellendus nobis. Sed consequuntur molestiae non! Illum, esse? Blanditiis ipsam delectus harum totam vel! Ex, perferendis ea veniam cupiditate earum inventore maxime mollitia placeat, ad animi eaque magnam dolorum illo id iusto eius! Quae, perferendis quos? Numquam sunt tenetur neque excepturi accusantium officia totam, officiis rem beatae perferendis, expedita nam libero est mollitia? Aliquam officia ab fugit suscipit, quae adipisci tempore. Architecto facere eligendi quia odio. Eveniet quaerat, eos odio laboriosam velit ratione sapiente iure officia recusandae veritatis adipisci soluta perspiciatis nisi? Quod culpa cupiditate, vel ipsam cumque, doloribus explicabo ratione est deserunt totam, tempora dolor ex nihil dicta sint necessitatibus consectetur.</p>
+                    </div>
+                    <div className='flex justify-center'>
+                        <button className='btn btn-accent'>
+                            <span>Like</span>
+                            <FontAwesomeIcon className='text-primary ml-3' icon="fa-solid fa-heart" />
+                        </button>
+                    </div>
+                    <div className='divider'></div>
+                    <div className='flex justify-around'>
+                        <div>
+                            <p className='text-xl'>Get our stories delivered</p>
+                            <p className='text-md'>From us to your inbox weekly.</p>
+                        </div>
+                        <div className='flex justify-end'>
+                            <input type="text" placeholder="Type your email" className="input input-bordered input-secondary w-full max-w-xs" />
+                            <button className='btn btn-accent'>Subscribe</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             {/* demo modal */}
